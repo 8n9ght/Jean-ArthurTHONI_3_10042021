@@ -2,7 +2,17 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "pages/_menu.scss",
+        "pages/_home.scss",
+        "base/_reset.scss",
+        "base/_typo.scss",
+        "layout/_container.scss",
+        "layout/_footer.scss",
+        "components/_cards.scss",
+        "components/_buttons.scss",
+        "utils/_variables.scss",
+        "utils/_mixins.scss"
     ],
     "names": [],
     "file": "main.css"
