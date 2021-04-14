@@ -1,0 +1,36 @@
+@font-face{
+    src: url('../../fonts/Roboto-Regular.ttf');
+    font-family: 'Roboto regular';
+}
+@font-face{
+    src: url('../../fonts/Roboto-Bold.ttf');
+    font-family: 'Roboto bold';
+}
+@font-face{
+    src: url('../../fonts/Roboto-Light.ttf');
+    font-family: 'Roboto light';
+}
+@font-face{
+    src: url('../../fonts/Shrikhand-Regular.ttf');
+    font-family: 'Shrikhand';
+}
+
+*{
+    @include body-font-regular;
+}
+
+h1, h2, h3, h4{
+    /*@include titling;*/
+}
+
+h2{
+    font-size: 1.6rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+p{
+    font-size: .9em;
+}

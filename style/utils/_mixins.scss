@@ -1,0 +1,89 @@
+@mixin titling {
+    font-family: 'Shrikhand';
+}
+
+@mixin body-font-regular {
+    font-family: 'Roboto';
+}
+@mixin body-font-bold {
+    font-family: 'Roboto bold';
+}
+@mixin body-font-light {
+    font-family: 'Roboto light';
+}
+
+@mixin picto-sizing {
+    height: 1.4rem ;
+}
+
+@mixin image-sizing {
+    width: 100%;
+    max-height: 70%;
+    height: max-content;
+    object-fit: cover;
+}
+
+@mixin content-sizing{
+    width: 100%;
+    max-height:30% ;
+    height: max-content;
+    object-fit: cover;
+}
+
+@mixin flexing {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin new {
+    text-align: center;
+    line-height: 1.5em;
+    background: $color-tertiary;
+    width: 5em;
+    padding: .2em .3em;
+    font-size: 0.9em;
+    position: absolute;
+    z-index: 99;
+    color: darken($color-tertiary, 45%);
+    right: .8em;
+    top: .8em;
+}
+
+@mixin text-wrap {
+    display: block;
+    margin: .3em 1.5em .5em .8em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 15rem;
+    overflow: hidden;
+    transition: all ease-out 200ms;
+}
+
+@mixin title-position {
+    margin: 1rem 0 1rem 1.1875rem;
+}
+
+@mixin intro-spacing {
+    margin: .5em;
+    text-align: center;
+}
+
+
+
+/* Animate */
+
+@mixin animate-quick {
+    transition: all ease-in-out 200ms;
+}
+
+@mixin animate-slow {
+    transition: all ease-in-out 400ms;
+}
+
+@mixin animate-slow--big {
+    transition: all ease-in-out 500ms;
+}
+
+@mixin coloring {
+    background: lighten($color-primary, 40%);
+}
