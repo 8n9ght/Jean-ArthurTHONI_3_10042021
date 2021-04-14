@@ -1,0 +1,63 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+@keyframes spinning{
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+
+    50%{
+        transform: scale(1.5) rotate(180deg);
+    }
+
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+@keyframes shadow-shift{
+    0%{
+        box-shadow: $color-secondary 0 0 5em;
+    }
+
+    50%{
+        box-shadow: $color-tertiary 0 0 5em;
+    }
+
+    100%{
+        box-shadow: $color-primary 0 0 5em;
+    }
+}
+
+@keyframes clearing {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+/*
+.loading{
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    background: white;
+    width: 100%;
+    height: 325vh;
+    animation: clearing 600ms 3000ms ease both;
+    pointer-events: none;
+    &__spinner{
+        position: absolute;
+        top: 12.5%;
+        left: 35%;
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        border: solid $color-tertiary 1em;
+        border-top: solid $color-primary 1em; 
+        border-bottom: solid $color-secondary 1em;
+        animation: spinning 2000ms linear infinite both, shadow-shift 2000ms ease-in-out infinite both, clearing 600ms 2500ms ease both;
+    }
+}*/
