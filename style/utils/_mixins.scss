@@ -49,12 +49,50 @@
     top: .8em;
 }
 
+@mixin new-regular {
+    text-align: center;
+    line-height: 1.5em;
+    background: $color-tertiary;
+    width: 5em;
+    padding: .2em .3em;
+    font-size: 1.2em;
+    position: absolute;
+    z-index: 99;
+    color: darken($color-tertiary, 45%);
+    right: .8em;
+    top: .8em;
+}
+
+@mixin new-big {
+    text-align: center;
+    line-height: 1.5em;
+    background: $color-tertiary;
+    width: 5em;
+    padding: .2em .3em;
+    font-size: 1.3em;
+    position: absolute;
+    z-index: 99;
+    color: darken($color-tertiary, 45%);
+    right: .8em;
+    top: .8em;
+}
+
 @mixin text-wrap {
     display: block;
     margin: .3em 1.5em .5em .8em;
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 15rem;
+    overflow: hidden;
+    transition: all ease-out 200ms;
+}
+
+@mixin text-wrap-big {
+    display: block;
+    margin: .3em 1.5em .5em .8em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 14rem;
     overflow: hidden;
     transition: all ease-out 200ms;
 }
@@ -86,4 +124,59 @@
 
 @mixin coloring {
     background: lighten($color-primary, 40%);
+}
+
+@mixin spawning {
+    @keyframes spawn {
+        from {
+          opacity: 0;
+          -webkit-transform: translateY(1.5rem);
+                  transform: translateY(1.5rem);
+        }
+        to {
+          opacity: 1;
+        }
+      }
+}
+
+@mixin card-delay {
+    .c1{
+        animation-delay: 100ms;
+    }
+
+    .c2{
+        animation-delay: 400ms;
+    }
+
+    .c3{
+        animation-delay: 700ms;
+    }
+
+    .c4{
+        animation-delay: 1000ms;
+    }
+
+    .c5{
+        animation-delay: 1300ms;
+    }
+
+    .c6{
+        animation-delay: 1500ms;
+    }
+
+    .c7{
+        animation-delay: 1800ms;
+    }
+
+    .c8{
+        animation-delay: 2100ms;
+    }
+
+    .c9{
+        animation-delay: 2300ms;
+    }
+    
+    .c10{
+        animation-delay: 2700ms;
+    }
 }

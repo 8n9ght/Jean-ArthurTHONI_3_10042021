@@ -110,3 +110,75 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px){
+    .heading{
+        &__logo{
+            padding: 1.5rem;
+            width: 40%;
+        }
+    }
+
+    .search{
+        &__form{
+            &__pic{
+                left: 42%;
+            }
+            &__input{
+                &::placeholder{
+                    font-size: 1.2em;;
+                }
+            }
+        }
+    }
+
+    .intro{
+        &__title{
+            font-size: 2.3em;
+        }
+        &__text{
+            font-size: 1.5em;
+        }
+        &__cta{
+            @include btn;
+            font-size: 1.3em;
+            }
+    }
+
+    .tuto{
+        padding: 2rem 4.5rem;
+        height: 15rem;
+        &__title{
+            @include title-position;
+            margin-bottom: 3rem;
+        }
+        &__step{
+            width: 30%;
+            float: left;
+            margin-left: 1.8rem;
+
+            &__number{
+                background: $color-primary;
+                width: 2em;
+                height: 2em;
+                border-radius: 50rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                position: absolute;
+                left: -1em;
+            }
+            &__pic{
+                fill: black;
+                width: 1rem;
+                height: 1rem;
+                @include animate-quick;
+            }
+            &__text{
+                font-size: .95em;
+                margin: 0 1.7em;
+            }
+        }
+    }
+}

@@ -2,6 +2,10 @@
 @import "../utils/mixins";
 @import "../components/buttons";
 
+
+@include spawning;
+@include card-delay;
+
 .heading--menu{
     display: flex;
     flex-direction: row;
@@ -96,6 +100,7 @@
         transition: ease-in-out all 400ms;
         overflow: hidden;
         position: relative;
+        animation: spawn 900ms both;
         &:hover .menu__plat__text{
                 width: 10rem;
             }
@@ -149,6 +154,88 @@
             height: 4rem;
             border: none;
             font-size: 1.1em;
+        }
+    }
+}
+
+
+@media screen and (min-width:1024px){
+    .heading--menu{
+        height: 5rem;
+        padding: 1rem;
+        &__pic{
+            top: 2.5rem;
+            
+        }
+        &__logo{
+            & img{
+                width: 35%;
+            }
+        }
+    }
+    
+    .resto__slider{
+        height: 30rem;
+    }
+    
+    .menu{
+        padding: 1.5rem 2rem;
+        border-radius: 0;
+        &__heading{
+            &__title{
+                font-size: 2em;
+                margin-bottom: 3rem;
+            }
+        }
+        &__plat{
+            &__title{
+                @include title-position;
+                padding-bottom: .4em;
+            }
+            &__card{
+            width: 28%;
+            float: left;
+            &:hover .menu__plat__text{
+                    width: 8rem;
+                }
+            &:hover .menu__plat__text p{
+                    width: 8rem;
+            }
+            &:hover .menu__plat__text h4{
+                    width: 8rem;
+            }
+            &:hover .menu__plat__confirm img{
+                    transform: rotate(-360deg);
+                }
+            }
+            &__text{
+                width: 14rem;
+                p{
+                    @include text-wrap-big;
+                }
+                h4{
+                    @include text-wrap-big;
+                }
+            }
+            &__price{
+                padding: 1.8em 0 0 2em;
+                margin-right: 2.5rem;
+            }
+            &__confirm{
+                width: 10rem;
+                height: 100%;
+            }
+        }
+        &__cta{
+            width: 95%;
+            align-items: center;
+            height: 10rem;
+            &__btn{
+                @include btn;
+                width: 25%;
+                padding: 0 .8em;
+                font-size: 1.8em;
+            }
         }
     }
 }

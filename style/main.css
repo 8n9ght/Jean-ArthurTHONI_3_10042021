@@ -1,4 +1,75 @@
 /* Animate */
+@-webkit-keyframes spawn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(1.5rem);
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes spawn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(1.5rem);
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.c1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.c2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.c3 {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.c4 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.c5 {
+  -webkit-animation-delay: 1300ms;
+          animation-delay: 1300ms;
+}
+
+.c6 {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.c7 {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
+.c8 {
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
+}
+
+.c9 {
+  -webkit-animation-delay: 2300ms;
+          animation-delay: 2300ms;
+}
+
+.c10 {
+  -webkit-animation-delay: 2700ms;
+          animation-delay: 2700ms;
+}
+
 .heading--menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,6 +195,8 @@
   transition: ease-in-out all 400ms;
   overflow: hidden;
   position: relative;
+  -webkit-animation: spawn 900ms both;
+          animation: spawn 900ms both;
 }
 
 .menu__plat__card:hover .menu__plat__text {
@@ -235,6 +308,112 @@
           filter: brightness(1.05);
   -webkit-box-shadow: #8b8b8b 0 0.2rem 13px;
           box-shadow: #8b8b8b 0 0.2rem 13px;
+}
+
+@media screen and (min-width: 1024px) {
+  .heading--menu {
+    height: 5rem;
+    padding: 1rem;
+  }
+  .heading--menu__pic {
+    top: 2.5rem;
+  }
+  .heading--menu__logo img {
+    width: 35%;
+  }
+  .resto__slider {
+    height: 30rem;
+  }
+  .menu {
+    padding: 1.5rem 2rem;
+    border-radius: 0;
+  }
+  .menu__heading__title {
+    font-size: 2em;
+    margin-bottom: 3rem;
+  }
+  .menu__plat__title {
+    margin: 1rem 0 1rem 1.1875rem;
+    padding-bottom: .4em;
+  }
+  .menu__plat__card {
+    width: 28%;
+    float: left;
+  }
+  .menu__plat__card:hover .menu__plat__text {
+    width: 8rem;
+  }
+  .menu__plat__card:hover .menu__plat__text p {
+    width: 8rem;
+  }
+  .menu__plat__card:hover .menu__plat__text h4 {
+    width: 8rem;
+  }
+  .menu__plat__card:hover .menu__plat__confirm img {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  .menu__plat__text {
+    width: 14rem;
+  }
+  .menu__plat__text p {
+    display: block;
+    margin: .3em 1.5em .5em .8em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 14rem;
+    overflow: hidden;
+    -webkit-transition: all ease-out 200ms;
+    transition: all ease-out 200ms;
+  }
+  .menu__plat__text h4 {
+    display: block;
+    margin: .3em 1.5em .5em .8em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 14rem;
+    overflow: hidden;
+    -webkit-transition: all ease-out 200ms;
+    transition: all ease-out 200ms;
+  }
+  .menu__plat__price {
+    padding: 1.8em 0 0 2em;
+    margin-right: 2.5rem;
+  }
+  .menu__plat__confirm {
+    width: 10rem;
+    height: 100%;
+  }
+  .menu__cta {
+    width: 95%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10rem;
+  }
+  .menu__cta__btn {
+    padding: 1.2em .8em;
+    margin: 1.2em 0 0;
+    text-align: center;
+    border-radius: 5rem;
+    width: 55%;
+    color: white;
+    background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+    background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+    -webkit-box-shadow: #b1b0b0 0 0.2rem 10px;
+            box-shadow: #b1b0b0 0 0.2rem 10px;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
+    width: 25%;
+    padding: 0 .8em;
+    font-size: 1.8em;
+  }
+  .menu__cta__btn:hover {
+    -webkit-filter: brightness(1.05);
+            filter: brightness(1.05);
+    -webkit-box-shadow: #8b8b8b 0 0.2rem 13px;
+            box-shadow: #8b8b8b 0 0.2rem 13px;
+  }
 }
 
 /* Animate */
@@ -438,6 +617,97 @@
   margin: 0 1.7em;
 }
 
+@media screen and (min-width: 1024px) {
+  .heading__logo {
+    padding: 1.5rem;
+    width: 40%;
+  }
+  .search__form__pic {
+    left: 42%;
+  }
+  .search__form__input::-webkit-input-placeholder {
+    font-size: 1.2em;
+  }
+  .search__form__input:-ms-input-placeholder {
+    font-size: 1.2em;
+  }
+  .search__form__input::-ms-input-placeholder {
+    font-size: 1.2em;
+  }
+  .search__form__input::placeholder {
+    font-size: 1.2em;
+  }
+  .intro__title {
+    font-size: 2.3em;
+  }
+  .intro__text {
+    font-size: 1.5em;
+  }
+  .intro__cta {
+    padding: 1.2em .8em;
+    margin: 1.2em 0 0;
+    text-align: center;
+    border-radius: 5rem;
+    width: 55%;
+    color: white;
+    background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+    background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+    -webkit-box-shadow: #b1b0b0 0 0.2rem 10px;
+            box-shadow: #b1b0b0 0 0.2rem 10px;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
+    font-size: 1.3em;
+  }
+  .intro__cta:hover {
+    -webkit-filter: brightness(1.05);
+            filter: brightness(1.05);
+    -webkit-box-shadow: #8b8b8b 0 0.2rem 13px;
+            box-shadow: #8b8b8b 0 0.2rem 13px;
+  }
+  .tuto {
+    padding: 2rem 4.5rem;
+    height: 15rem;
+  }
+  .tuto__title {
+    margin: 1rem 0 1rem 1.1875rem;
+    margin-bottom: 3rem;
+  }
+  .tuto__step {
+    width: 30%;
+    float: left;
+    margin-left: 1.8rem;
+  }
+  .tuto__step__number {
+    background: #9356dc;
+    width: 2em;
+    height: 2em;
+    border-radius: 50rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    position: absolute;
+    left: -1em;
+  }
+  .tuto__step__pic {
+    fill: black;
+    width: 1rem;
+    height: 1rem;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms;
+  }
+  .tuto__step__text {
+    font-size: .95em;
+    margin: 0 1.7em;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -454,6 +724,7 @@ a {
 
 html {
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -507,6 +778,7 @@ p {
   margin: auto;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 /* Animate */
@@ -547,7 +819,75 @@ p {
   margin: 0 0.8em 0 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .end {
+    clear: both;
+    padding: 1rem 4.5rem;
+  }
+}
+
 /* Animate */
+@keyframes spawn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(1.5rem);
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.c1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.c2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.c3 {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.c4 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.c5 {
+  -webkit-animation-delay: 1300ms;
+          animation-delay: 1300ms;
+}
+
+.c6 {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.c7 {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
+.c8 {
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
+}
+
+.c9 {
+  -webkit-animation-delay: 2300ms;
+          animation-delay: 2300ms;
+}
+
+.c10 {
+  -webkit-animation-delay: 2700ms;
+          animation-delay: 2700ms;
+}
+
 .resto__heading__title {
   margin: 1rem 0 1rem 1.1875rem;
 }
@@ -557,6 +897,7 @@ p {
   width: 100%;
   height: 100%;
   padding: 1.5rem 0;
+  clear: both;
 }
 
 .resto__card {
@@ -570,6 +911,8 @@ p {
           box-shadow: #b1b0b0 0 0.5rem 20px;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
+  -webkit-animation: spawn 2000ms both;
+          animation: spawn 2000ms both;
 }
 
 .resto__card:hover {
@@ -667,6 +1010,40 @@ p {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .resto {
+    padding: 1.5rem 4.5rem;
+    height: 55rem;
+  }
+  .resto__card {
+    height: 20em;
+    width: 40%;
+    float: left;
+  }
+  .resto__card__banner {
+    text-align: center;
+    line-height: 1.5em;
+    background: #99e2d0;
+    width: 5em;
+    padding: .2em .3em;
+    font-size: 1.3em;
+    position: absolute;
+    z-index: 99;
+    color: #217460;
+    right: .8em;
+    top: .8em;
+  }
+  .resto__card__content {
+    height: 5em;
+  }
+  .resto__card__infos h4 {
+    font-size: 1.5em;
+  }
+  .resto__card__infos p {
+    font-size: 1.3em;
+  }
 }
 
 /* Animate */
