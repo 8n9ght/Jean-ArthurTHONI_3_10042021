@@ -1,9 +1,15 @@
 @import "./../utils/mixins";
 
 .end{
-    background:#2b2b2b;
-    height: 20rem;
-    width: 100%;
+    @include ending;
+    box-sizing: border-box;
+    &--alt{
+        @include ending;
+        position: relative;
+        top: 15rem;
+        box-sizing: border-box;
+    }
+
     &__logo{
         margin: 1.5em 0 .5em 1.2em;
         @include picto-sizing;
@@ -36,5 +42,39 @@
     .end{
         clear: both;
         padding: 1rem 4.5rem;
+        &--alt{
+            position: initial;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .end{
+        clear: both;
+        padding: 2rem;
+        &--alt{
+            height: 30rem;
+            top: 25rem;
+            padding: 2rem;
+        }
+        &__logo{
+            height: 2.3em;
+            margin-left: 1.5rem;
+        }
+        &__list{
+            &__alt{
+                margin: 1.2em 0 1.5em 2em;
+            }
+            &__link{
+                font-size: 1.6em;
+                &--pic{
+                font-size: 1.6em;
+                }
+            }
+            &__pic{
+                width: 1.6em;
+                margin: 0 0.8em 0 0;
+            }
+        }
     }
 }

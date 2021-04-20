@@ -38,20 +38,21 @@
     }
 }
 
-/*
+
 .loading{
     position: absolute;
     top: 0;
     z-index: 999;
     background: white;
     width: 100%;
-    height: 325vh;
+    box-sizing: border-box;
+    height: 150rem;
     animation: clearing 600ms 3000ms ease both;
     pointer-events: none;
     &__spinner{
         position: absolute;
         top: 12.5%;
-        left: 35%;
+        left: 37.5%;
         width: 5em;
         height: 5em;
         border-radius: 50%;
@@ -60,4 +61,26 @@
         border-bottom: solid $color-secondary 1em;
         animation: spinning 2000ms linear infinite both, shadow-shift 2000ms ease-in-out infinite both, clearing 600ms 2500ms ease both;
     }
-}*/
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .loading{
+        &__spinner{
+            top: 15%;
+            left: 45%;
+            width: 5em;
+            height: 5em;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .loading{
+        &__spinner{
+            top: 12.5%;
+            left: 45%;
+            width: 5em;
+            height: 5em;
+        }
+    }
+}
