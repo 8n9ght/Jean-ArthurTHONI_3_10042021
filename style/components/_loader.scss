@@ -48,7 +48,7 @@
     box-sizing: border-box;
     height: 100%;
     animation: clearing 600ms 3000ms ease both;
-    pointer-events: none;/*
+    pointer-events: none;
     &__spinner{
         position: absolute;
         top: 12.5%;
@@ -60,7 +60,7 @@
         border-top: solid $color-primary 1em; 
         border-bottom: solid $color-secondary 1em;
         animation: spinning 2000ms linear infinite both, shadow-shift 2000ms ease-in-out infinite both, clearing 600ms 2500ms ease both;
-    }*/
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
