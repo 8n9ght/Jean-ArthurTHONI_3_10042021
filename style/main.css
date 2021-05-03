@@ -641,6 +641,16 @@
   color: #666666;
 }
 
+.intro__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .intro__cta {
   padding: 1.2em .8em;
   margin: 1.2em 0 0;
@@ -859,26 +869,8 @@
     font-size: 1.5em;
   }
   .intro__cta {
-    padding: 1.2em .8em;
-    margin: 1.2em 0 0;
-    text-align: center;
-    border-radius: 5rem;
-    width: 55%;
-    color: white;
-    background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-    background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-    -webkit-box-shadow: #b1b0b0 0 0.2rem 10px;
-            box-shadow: #b1b0b0 0 0.2rem 10px;
-    -webkit-transition: all ease-in-out 200ms;
-    transition: all ease-in-out 200ms;
     width: 40%;
     font-size: 1.5em;
-  }
-  .intro__cta:hover {
-    -webkit-filter: brightness(1.05);
-            filter: brightness(1.05);
-    -webkit-box-shadow: #8b8b8b 0 0.2rem 13px;
-            box-shadow: #8b8b8b 0 0.2rem 13px;
   }
   .tuto {
     padding: 2rem 4rem;
@@ -1434,7 +1426,7 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .loading__spinner {
-    top: 15%;
+    top: 17.5%;
     left: 45%;
     width: 5em;
     height: 5em;

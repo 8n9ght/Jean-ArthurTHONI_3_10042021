@@ -57,6 +57,11 @@
         @include intro-spacing;
         color: lighten(#000000, 40%);
     }
+    &__link{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
     &__cta{
         @include btn;
         }
@@ -213,7 +218,6 @@
             font-size: 1.5em;
         }
         &__cta{
-            @include btn;
             width: 40%;
             font-size: 1.5em;
             }
